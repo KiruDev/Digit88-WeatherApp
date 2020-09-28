@@ -92,13 +92,18 @@ class WeatherController: UIViewController, CityFetcherDelegate, WeatherDelegate 
             self?.weatherChart.removeAllSeries()
             self?.weatherChart.add(series)
             
-            series.colors = (
-                above: ChartColors.cyanColor(),
-                below: ChartColors.orangeColor(),
-                zeroLevel: 18
-            )
-            self?.weatherChart.minY = -5
-            self?.weatherChart.maxY = 42
+            if let averageWeather = self?.weatherViewModel?.averageWeather {
+                series.colors = (
+                    above: ChartColors.cyanColor(),
+                    below: ChartColors.orangeColor(),
+                    zeroLevel: Double(averageWeather)
+                )
+            }
+            if let minTemp = self?.weatherViewModel?.minTemperature, let maxTemp = self?.weatherViewModel?.maxTemperature {
+                self?.weatherChart.minY = Double(minTemp)
+                self?.weatherChart.maxY = Double(maxTemp)
+            }
+            
             self?.weatherChart.minX = data.keys.first
             self?.weatherChart.yLabelsFormatter = { String(Int($1)) +  "ºC"}
             

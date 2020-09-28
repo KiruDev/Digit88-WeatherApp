@@ -16,6 +16,9 @@ protocol WeatherDelegate {
 
 struct WeatherViewModel {
     var weatherDelegate: WeatherDelegate?
+    var averageWeather = 18
+    var minTemperature = -5
+    var maxTemperature = 42
     
     init(weatherDelegate: WeatherDelegate) {
         self.weatherDelegate = weatherDelegate
@@ -26,12 +29,12 @@ struct WeatherViewModel {
     
     func fetchWeather(city: String) {
         
-        var temperature = ""
-        var humidity = ""
-        var description = ""
-        var info = ""
-        
         Service.shared.getWeather(city: city) { (json, err) in
+            
+            var temperature = ""
+            var humidity = ""
+            var description = ""
+            var info = ""
             if let mainTemp = json?["main"] as? [String: Any], let temp = mainTemp["temp"], let feels = mainTemp["feels_like"], let humi = mainTemp["humidity"] {
                 temperature = "\(temp)"
                 humidity = "\(humi)"
@@ -72,9 +75,9 @@ struct WeatherViewModel {
                 
                 for weatherJson in weatherArray {
                     if let mainTemp = weatherJson["main"] as? [String: Any], let temp = mainTemp["temp"] as? NSNumber, let date = weatherJson["dt"] as? Double  {
-                       
+                        
                         let day = NSDate(timeIntervalSince1970: date)
-
+                        
                         let dateFormatter = DateFormatter()
                         dateFormatter.timeStyle = DateFormatter.Style.none
                         dateFormatter.dateStyle = DateFormatter.Style.short

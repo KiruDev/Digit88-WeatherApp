@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="158-Yg-oKQ">
-                                        <rect key="frame" x="8" y="12" width="398" height="536"/>
+                                        <rect key="frame" x="8" y="12" width="398" height="544"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
@@ -58,7 +58,7 @@
                                         <color key="highlightedColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUc-fq-Bgl" customClass="Chart" customModule="SwiftChart">
-                                        <rect key="frame" x="16" y="580" width="382" height="260"/>
+                                        <rect key="frame" x="12" y="580" width="390" height="260"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -93,20 +93,20 @@
                                     <constraint firstItem="Tz1-qW-yrN" firstAttribute="bottom" secondItem="PUc-fq-Bgl" secondAttribute="bottom" constant="12" id="8wj-L1-8BN"/>
                                     <constraint firstItem="eo1-xR-aPk" firstAttribute="top" secondItem="3cH-RV-cQe" secondAttribute="bottom" constant="18.5" id="9o5-Mn-YL8"/>
                                     <constraint firstItem="eo1-xR-aPk" firstAttribute="centerX" secondItem="eIW-Rx-eaC" secondAttribute="centerX" id="CHQ-lb-AfK"/>
-                                    <constraint firstItem="PUc-fq-Bgl" firstAttribute="top" secondItem="158-Yg-oKQ" secondAttribute="bottom" constant="32" id="Ecf-ki-H7q"/>
+                                    <constraint firstItem="PUc-fq-Bgl" firstAttribute="top" secondItem="158-Yg-oKQ" secondAttribute="bottom" constant="24" id="Ecf-ki-H7q"/>
                                     <constraint firstAttribute="trailing" secondItem="nJl-vi-65Q" secondAttribute="trailing" constant="24" id="Fbm-wh-jUi"/>
                                     <constraint firstItem="kCD-Y4-cxp" firstAttribute="leading" secondItem="eIW-Rx-eaC" secondAttribute="leading" constant="55" id="IKh-e5-kvd"/>
                                     <constraint firstItem="3cH-RV-cQe" firstAttribute="top" secondItem="nJl-vi-65Q" secondAttribute="bottom" constant="42" id="M2n-C7-hqO"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3cH-RV-cQe" secondAttribute="trailing" constant="20" symbolic="YES" id="MjA-fo-Ghq"/>
-                                    <constraint firstAttribute="bottom" secondItem="PUc-fq-Bgl" secondAttribute="bottom" constant="32" id="Y7Q-NW-Y22"/>
+                                    <constraint firstAttribute="bottom" secondItem="PUc-fq-Bgl" secondAttribute="bottom" constant="48" id="Y7Q-NW-Y22"/>
                                     <constraint firstItem="158-Yg-oKQ" firstAttribute="leading" secondItem="eIW-Rx-eaC" secondAttribute="leading" constant="8" id="Yc1-MS-Zo4"/>
                                     <constraint firstItem="158-Yg-oKQ" firstAttribute="centerX" secondItem="eIW-Rx-eaC" secondAttribute="centerX" id="ih0-Ae-IGt"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kCD-Y4-cxp" secondAttribute="trailing" constant="20" symbolic="YES" id="ozv-YL-Ict"/>
                                     <constraint firstItem="3cH-RV-cQe" firstAttribute="centerX" secondItem="eIW-Rx-eaC" secondAttribute="centerX" id="pHh-Iq-y0z"/>
                                     <constraint firstItem="158-Yg-oKQ" firstAttribute="centerX" secondItem="nJl-vi-65Q" secondAttribute="centerX" id="qqn-gT-58W"/>
                                     <constraint firstItem="kCD-Y4-cxp" firstAttribute="top" secondItem="3cH-RV-cQe" secondAttribute="bottom" constant="90" id="snQ-pB-YJZ"/>
-                                    <constraint firstItem="PUc-fq-Bgl" firstAttribute="leading" secondItem="eIW-Rx-eaC" secondAttribute="leading" constant="16" id="vUu-5Z-tqb"/>
-                                    <constraint firstAttribute="trailing" secondItem="PUc-fq-Bgl" secondAttribute="trailing" constant="16" id="wQx-dy-Lra"/>
+                                    <constraint firstItem="PUc-fq-Bgl" firstAttribute="leading" secondItem="eIW-Rx-eaC" secondAttribute="leading" constant="12" id="vUu-5Z-tqb"/>
+                                    <constraint firstAttribute="trailing" secondItem="PUc-fq-Bgl" secondAttribute="trailing" constant="12" id="wQx-dy-Lra"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="2Dn-ud-4Ar"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Tz1-qW-yrN"/>
